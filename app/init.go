@@ -7,15 +7,17 @@ import (
 
 func init() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprint(w, '
-          <html>
-            <head>
-              <title>チャット</title>
-            </head>
-            <body>
-              チャットしましょう!
-            </body>
-          </html>
-        ')
+        fmt.Fprint(w,
+          []byte(`
+            <html>
+              <head>
+                <title>チャット</title>
+              </head>
+              <body>
+                チャットしましょう!
+              </body>
+            </html>
+          `)
+        )
     })
 }
