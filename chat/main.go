@@ -5,10 +5,13 @@ import (
 	"net/http"
 )
 
-func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte(`
-      <html>
+func init() {
+    http.HandleFunc("/", handler)
+}
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprint(w, "
+			<html>
         <head>
           <title>チャット</title>
         </head>
@@ -16,10 +19,5 @@ func main() {
           チャットしましょう!
         </body>
       </html>
-    `))
-	})
-	// Webサーバーを開始します
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		log.Fatal("ListenAndServe:", err)
-	}
+		")
 }
