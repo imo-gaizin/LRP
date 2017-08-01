@@ -10,7 +10,7 @@
 
 #GAEの使いかた
 ```
-cd ~/src/lunchrecommendproject-175311/lrp
-goapp serve app.yaml
-goapp deploy -application lunchrecommendproject-175311 -version 0
+cd ~/src/lrp02-175510/lrp
+goapp serve ./app
+goapp deploy -application lrp02-175510 -version 1 ./app/
 ```
