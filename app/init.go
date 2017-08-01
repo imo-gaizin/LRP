@@ -8,8 +8,7 @@ import (
 func init() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprint(w, "へろーわーるどやで！！！")
-        w.Write(
-            []byte(`
+        w.Write([]byte(`
               <html>
                 <head>
                   <title>チャット</title>
@@ -18,7 +17,6 @@ func init() {
                   チャットしましょう!
                 </body>
               </html>
-            `)
-        )
+        `))
     })
 }
