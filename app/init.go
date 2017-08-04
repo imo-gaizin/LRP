@@ -12,7 +12,7 @@ func init() {
                   <title>へろーわーるど</title>
                 </head>
                 <body>
-                  へろーわーるどやで！！！
+                  へろーわーるどやで 02 ！！！
                 </body>
               </html>
         `))

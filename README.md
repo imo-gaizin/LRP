@@ -4,7 +4,8 @@
 
 ## 環境設定
 `#  export GOPATH=$HOME/go`
-## コンパイルの仕方
+## コンパイルの仕方]
+ｓ
 `#  /usr/local/go/bin/go install lrp/`
 
 
